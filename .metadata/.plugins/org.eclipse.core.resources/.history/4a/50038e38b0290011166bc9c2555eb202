@@ -1,0 +1,20 @@
+package parktiket;
+
+public class Ticket {
+	
+	int ID;
+	String owner;
+	String model;
+	boolean isPaid = false;
+	
+	static int cTicket = 0;
+	
+	public Ticket(String owner, String model) {
+		
+		cTicket++;
+		ID = cTicket;
+		this.owner = owner;
+		this.model = model;
+	}
+
+}

@@ -1,0 +1,20 @@
+package p01;
+
+import java.util.Scanner;
+
+public class Square {
+
+	public static void main(String[] args) {
+		System.out.println("Zahl eingeben");
+		
+		Scanner input = new Scanner(System.in);
+		
+		int num = input.nextInt();
+		
+		System.out.println(num^2);
+		
+		input.close();
+
+	}
+
+}

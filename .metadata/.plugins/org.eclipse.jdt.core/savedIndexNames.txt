@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+/user/data/ia25/s90328/Studium/prog2/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+58474221.index
+1865797976.index

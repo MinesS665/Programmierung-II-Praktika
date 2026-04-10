@@ -1,0 +1,11 @@
+package bank;
+
+public class Konto {
+	
+	float money;
+	Kunde kunde;
+	
+	public transfer(float money) {
+		
+	}
+}

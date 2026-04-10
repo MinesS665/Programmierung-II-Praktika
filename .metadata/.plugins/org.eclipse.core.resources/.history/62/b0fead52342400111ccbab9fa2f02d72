@@ -1,0 +1,36 @@
+package p01;
+
+import java.util.Scanner;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int matrixA[][] = new int[3][3];
+		int matrixB[][]= new int[3][3];
+		
+		System.out.println("Matrix A eigeben");
+		for (int i = 0; i<3; i++) {
+			for(int j=0; j<3; i++) {
+				matrixA[i][j] = input.nextInt();
+			}
+		}
+		
+		
+		System.out.println("Matrix B eigeben");
+		for (int i = 0; i<3; i++) {
+			for(int j=0; j<3; i++) {
+				matrixB[i][j] = input.nextInt();
+			}
+		}
+		
+		System.out.println(matrixA[0][0]+ matrixA[0][0]+ matrixA[0][2]+"     " + matrixB[0][0]+ matrixB[0][0]+ matrixB[0][2]);
+		System.out.println(matrixA[1][1]+ matrixA[1][1]+ matrixA[1][2]+"  +  " +matrixB[1][1]+ matrixB[1][1]+ matrixB[1][2]);
+		System.out.println(matrixA[2][2]+ matrixA[2][2]+ matrixA[2][2]+"     " +matrixB[2][2]+ matrixB[2][2]+ matrixB[2][2]);
+		
+		
+		
+		input.close();
+	}
+
+}

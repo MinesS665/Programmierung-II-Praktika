@@ -1,0 +1,10 @@
+package bank;
+
+public class Kunde {
+	
+	int ID;
+	static int cCustomer;
+	
+	String name;
+	
+}

@@ -1,0 +1,24 @@
+package p01;
+
+import java.util.Scanner;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int matrixA[][] = new int[3][3];
+		int matrixB[][]= new int[3][3];
+		
+		System.out.println("Matrix A eigeben");
+		for (int i = 0; i<3; i++) {
+			for(int j=0; j<3; i++) {
+				matrixA[i][j] = input.nextInt();
+			}
+		}
+		
+		
+		
+		input.close();
+	}
+
+}
