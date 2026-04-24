@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"javadocTest","c":"Calculator","l":"add(int, int)","u":"add(int,int)"},{"p":"javadocTest","c":"Calculator","l":"average(int, int)","u":"average(int,int)"},{"p":"javadocTest","c":"Calculator","l":"Calculator()","u":"%3Cinit%3E()"},{"p":"javadocTest","c":"Calculator","l":"multiply(int, int)","u":"multiply(int,int)"}];updateSearchResults();
