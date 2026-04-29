@@ -15,23 +15,32 @@ public class ShopApp {
         products.add(new Product("Maus", 19.99));
         products.add(new Product("Tastatur", 49.99));
 
-        Collections.sort(products, new Comparator<Product>() {
-        	
-        	@Override
-        	public int compare(Product a, Product b) {
-        		return Double.compare(a.getPrice(), b.getPrice());
-        	}
-        });
+        Collections.sort(	products, 
+        					new Comparator<Product>() {
+        						@Override
+        						public int compare(Product a, Product b) {
+        							return Double.compare(a.getPrice(), b.getPrice());
+				        		}
+        	                }
+        );
         
-        // Ausgabe 1:
+        //Ausgabe 1:
         System.out.println("Sortiert nach Preis:");
         for (Product p : products) {
             System.out.println(p);
         }
         
-        // TODO: Sortierung nach Name
+        Collections.sort(	products,
+        					new Comparator<Product>() {
+        						@Override
+        						public int compare(Product a, Product b) {
+        							return a.getName().compareToIgnoreCase(b.getName());
+        						}
+        					}
+        		
+        );
 
-        // Ausgabe 2:
+        //Ausgabe 2:
         System.out.println("\nSortiert nach Name:");
         for (Product p : products) {
             System.out.println(p);
