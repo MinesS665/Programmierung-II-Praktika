@@ -1,0 +1,11 @@
+<!ELEMENT plan (event+)>
+<!ELEMENT event (title, organisator, date, place, time, guests, category, typ)>
+<!ATTLIST event id CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT organisator (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT guests (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT typ (#PCDATA)>
