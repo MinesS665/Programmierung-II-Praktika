@@ -13,7 +13,7 @@ public class TestSAX {
 			
 			System.out.println("Reader: " + saxParser.getXMLReader().toString());
 			MyHandler handler = new MyHandler();
-			saxParser.parse("/src/event.xml", handler);
+			saxParser.parse("src/event.xml", handler);
 		} catch (SAXException e) {
 			System.out.println("SAX-Fehler: " + e.getMessage());
 		} catch (Exception e) {

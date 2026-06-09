@@ -8,7 +8,11 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class MyHandler extends DefaultHandler{
 
-	private String inhalt = "";
+	private String curTag = "";
+	private String title;
+	private String organisator;
+	private int guests;
+	private int aEvents = 0;
 	
 	@Override
 	public void startDocument() throws SAXException {
@@ -20,26 +24,48 @@ public class MyHandler extends DefaultHandler{
 	}
 	
 	@Override
-	public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
-		System.out.println(qName + ": ");
+	public void startElement(String stringURI, String localName, String qName, Attributes atts) throws SAXException {
 		
-		System.out.println(qName);
+		curTag = qName;
 		
-		for (int i=0; i<atts.getLength(); i++) {
-			System.out.println("- Attribut Nr. " + (i+1) + ": " +atts.getQName(i) + "= " + atts.getValue(i));
-			}
+		if("event".equals(qName)) {
+			title = "";
+			organisator = "";
+			guests = 0;
+		}
 	}
 	
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		inhalt = inhalt + new String(ch, start, length);
+		
+		String tmp = new String(ch, start, length).trim();
+		
+		if (curTag.isEmpty()) return;
+		
+		switch (curTag) {
+		case "title": title += tmp; break;
+		case "organisator": organisator += tmp; break;
+		case "guests":
+			try {
+				guests = Integer.parseInt(tmp);
+			} catch (NumberFormatException e) {
+				guests = 0;
+			}
+			break;
+		}
+		
 	}
 	
 	@Override
 	public void endElement(String uri, String localName, String qName) {
-		System.out.println("Inhalt von "+qName+": "+inhalt);
-		inhalt = "";
-		System.out.println("Ende des Elements "+qName);
-		System.out.println("");
+		
+		if ("event".equals(qName)) {
+			aEvents++;
+			
+			System.out.println(title + ", " + organisator + ", Anzahl Gäste: " + guests);
+			
+			curTag = "";
+		}
+
 	}
 }
