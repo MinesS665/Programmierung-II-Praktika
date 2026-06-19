@@ -1,35 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE plan SYSTEM "events.dtd">
 <plan>
-	<event id = "01">
-		<title>Sommerfest</title>
-		<organisator>StuRa HTWD</organisator>
-		<date>01.07.26</date>
-		<place>Innenhof</place>
-		<time>14:0=</time>
-		<guests>200</guests>
-		<category>festivity</category>
-		<typ>offline</typ>
-	</event>
-	
-	<event id = "02">
-		<title>Bibliotheksworkshop</title>
-		<organisator>Dr. Büchner</organisator>
-		<date>31.07.26</date>
-		<place>HTW Bibliothek</place>
-		<time>9:00</time>
-		<guests>15</guests>
-		<category>workshop</category>
-		<typ>online</typ>
-	</event>
-	
-	<event id = "03">
-		<title>Jahresessen</title>
-		<organisator>AGDSN</organisator>
-		<date>31.05.26</date>
-		<place>Neue Mensa</place>
-		<time>17:00</time>
-		<guests>150</guests>
-		<category>festivity</category>
-		<typ>offline</typ>
-	</event>
+    <event id="01">
+        <title>Sommerfest</title>
+        <organisator>StuRa HTWD</organisator>
+        <date>01.07.26</date>
+        <place>Innenhof</place>
+        <time>14:00</time>
+        <guests>200</guests>
+        <category>festivity</category>
+        <typ>offline</typ>
+    </event>
+    <event id="02">
+        <title>Bibliotheksworkshop</title>
+        <organisator>Dr. Büchner</organisator>
+        <date>31.07.26</date>
+        <place>HTW Bibliothek</place>
+        <time>9:00</time>
+        <guests>15</guests>
+        <category>workshop</category>
+        <typ>online</typ>
+    </event>
+    <event id="03">
+        <title>Jahresessen</title>
+        <organisator>AGDSN</organisator>
+        <date>31.05.26</date>
+        <place>Neue Mensa</place>
+        <time>17:00</time>
+        <guests>150</guests>
+        <category>festivity</category>
+        <typ>offline</typ>
+    </event>
+    <event id="04">
+        <title>Krypto</title>
+        <organisator>Prof. Wichtig</organisator>
+        <date>01.07.26</date>
+        <place>HSZ 301</place>
+        <time>16:00</time>
+        <guests>90</guests>
+        <category>Vorlesung</category>
+        <typ>Präsenz</typ>
+    </event>
 </plan>
